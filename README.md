@@ -1,21 +1,37 @@
 # TA
 
-**TODO: Add description**
+Package with the following Technical Indicators (TA) implemented in Elixir and using Explorer as a dependency to handle data:
+
+- SMA
+- EMA
+- RSI
+- StochasticRSI
+- MACD
+- IMACD
+- SMMA
+- ZLEMA
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ta` to your list of dependencies in `mix.exs`:
+Tthe package can be installed by adding `ta` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:ta, "~> 0.1.0"}
+    {:ta, git: "https://github.com/alkufurado/ta", tag: "0.1.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ta>.
+## 
 
+Tests can be run by using `mix` in a shell:
+
+`mix test`
+
+## TODO
+
+- [ ] Split the code so each indicator is in its own file
+- [ ] Add code documentation
+- [ ] Add usage examples
+- [ ] Add more tests
